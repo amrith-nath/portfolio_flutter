@@ -17,8 +17,12 @@ class ResponsiveData {
     return getMediaQueryData().size.height;
   }
 
+  // bool get isSmallScreen {
+  //   return getScreenWidth < 730;
+  // }
+
   bool get isSmallScreen {
-    return getScreenWidth < 730;
+    return getScreenWidth < 900;
   }
 
   bool get isMediumScreen {

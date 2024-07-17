@@ -7,10 +7,12 @@ class NavbarButton extends StatelessWidget {
     required this.onClick,
     required this.label,
     this.isSelected = false,
+    this.color,
   });
   final String label;
   final Function() onClick;
   final bool isSelected;
+  final Color? color;
   @override
   Widget build(BuildContext context) {
     return TextButton(
@@ -22,7 +24,9 @@ class NavbarButton extends StatelessWidget {
           children: [
             Text(
               label,
-              style: KFonts.navActionStyle,
+              style: KFonts.navActionStyle.copyWith(
+                color: color,
+              ),
             ),
           ],
         ));

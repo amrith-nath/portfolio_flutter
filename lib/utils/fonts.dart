@@ -15,4 +15,8 @@ class KFonts {
   static final subHeadStyle = GoogleFonts.plusJakartaSans(
     color: KColors.blackSecondary,
   );
+
+  static final normalStyle = GoogleFonts.plusJakartaSans(
+    color: KColors.blackSecondary,
+  );
 }
